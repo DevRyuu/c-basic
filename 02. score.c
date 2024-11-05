@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main(void)
+int main()
 {
     int kor[10];
     int eng[10];
@@ -38,9 +38,7 @@ int main(void)
 
     for(int l=0;l<10;l++)
     {
-        printf("[%04d] %06d %06d %06d %06d %06.2f", l, "", kor[l], eng[l], math[l], total[l], avg[l]);
-
-
+        printf("[%d] %-4d %-4d %-4d %-4d %.2f\n", l, kor[l], eng[l], math[l], total[l], avg[l]);
     }
     return 0;
 }
